@@ -193,12 +193,15 @@ export default App;
 **index.js/main.jsx:**
 
 ```jsx
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import App from './App.jsx'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
 ```
 
 ---
@@ -211,6 +214,21 @@ import React from 'react';
 
 * Imports the core React library.
 * Necessary to use JSX syntax and React features like components, hooks, etc.
+
+  
+```js
+<StrictMode>
+    <App />
+</StrictMode>,
+```
+
+* React.StrictMode is a wrapper component used during development.
+* It helps identify potential issues in the application:
+  * Detects unsafe lifecycle methods
+  * Warns about legacy API usage
+  * Helps highlight side effects
+
+Note: It doesn't affect the production build.
 
 ```js
 import ReactDOM from 'react-dom/client';
