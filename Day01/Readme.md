@@ -29,18 +29,22 @@ In React, the DOM (Document Object Model) is a structured representation of the 
 **Actual DOM:**
 
 * The real Document Object Model directly rendered and manipulated in the browser.
+* It is a actual representation of a webpage.
+* It re-renders the entire pages.
+* It Suitable for static websites.
 
 **Virtual DOM:**
 
-* A lightweight JavaScript object that is a copy of the real DOM.
+* A lightweight JavaScript object copy of the real DOM.
 * Used by React to track changes and update only the necessary parts of the UI efficiently.
+* Ideal and good for dynamic and complex Single page application.
 
 | Feature      | Virtual DOM                        | Actual DOM                           |
 | ------------ | ---------------------------------- | ------------------------------------ |
 | Type         | JavaScript Object                  | Browser API                          |
 | Speed        | Faster updates via diffing         | Slower as it updates whole tree      |
 | Efficiency   | Efficient with large-scale changes | Less efficient with frequent changes |
-| Usage        | Used in frameworks like React      | Native to browser                    |
+| Usage        | Used in libraries like React       | Used in frameworks like Angular      |
 | Manipulation | Handled via libraries like React   | Directly via JS/DOM APIs             |
 
 **Advantages of Virtual DOM:**
