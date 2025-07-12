@@ -24,6 +24,8 @@ React is an open-source JavaScript library used to build user interfaces, partic
 
 ### 2. Virtual DOM vs Actual DOM
 
+In React, the DOM (Document Object Model) is a structured representation of the HTML elements in a web page or application. It organizes the UI as a tree-like structure, where each node represents an element or component.
+
 **Actual DOM:**
 
 * The real Document Object Model directly rendered and manipulated in the browser.
