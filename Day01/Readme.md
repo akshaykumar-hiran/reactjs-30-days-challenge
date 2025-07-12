@@ -180,13 +180,13 @@ npm run dev
 ```jsx
 function App() {
   return (
-    <div>
-      <h1>Hello, World!</h1>
-      <p>Welcome to your first React app.</p>
-    </div>
-  );
+    <>
+      <div>
+        <h1>Welcome to the 30 Days Reactjs Challenge</h1>
+      </div>
+    </>
+  )
 }
-
 export default App;
 ```
 
