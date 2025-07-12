@@ -137,6 +137,25 @@ npx create-react-app hello-world
 cd hello-world
 npm start
 ```
+### OR
+### Create React App using Vite
+
+```bash
+npm create vite@latest
+
+Project name:
+│  30-days-reactjs-challenge
+│
+◇  Select a framework:
+│  React
+│
+◇  Select a variant:
+│  JavaScript
+
+cd 30-days-reactjs-challenge
+npm run dev
+
+```
 
 ### 3. Understand Folder Structure
 
@@ -165,7 +184,7 @@ function App() {
 export default App;
 ```
 
-**index.js:**
+**index.js/main.jsx:**
 
 ```jsx
 import React from 'react';
@@ -178,7 +197,7 @@ root.render(<App />);
 
 ---
 
-## 🔍 index.js Code Explanation (for Interviews)
+## 🔍 index.js/main.jsx Code Explanation (for Interviews)
 
 ```js
 import React from 'react';
