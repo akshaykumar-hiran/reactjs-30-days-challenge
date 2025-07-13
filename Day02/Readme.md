@@ -35,13 +35,14 @@ class Welcome extends React.Component {
 }
 ```
 ### 🔸 Comparison Table
-Feature           | 	Functional Component |	Class Component
-Syntax	       | Function	| ES6 Class
-State          | Management	Hooks (useState) |	this.state and this.setState
-Lifecycle Methods |	Hooks (useEffect) |	componentDidMount, etc.
-Simplicity	| More concise and readable	 | More verbose
-Performance	| Slightly better with Hooks	| Slightly heavier
-Usage   (2024+) | 	Recommended	 | Legacy/rare
+|Feature           | 	Functional Component       |	Class Component
+-------------------|-----------------------------|---------------------
+|Syntax	           | Function	                   | ES6 Class
+|State             | Management	Hooks (useState) |	this.state and this.setState
+|Lifecycle Methods |	Hooks (useEffect)          |	componentDidMount, etc.
+|Simplicity      	 | More concise and readable	 | More verbose
+|Performance	     | Slightly better with Hooks	 | Slightly heavier
+|Usage   (2024+)   | 	Recommended	               | Legacy/rare
 
 ## 📌 2. Props (Properties)
 ### 🔹 What are Props?
