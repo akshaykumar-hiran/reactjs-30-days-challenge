@@ -189,12 +189,20 @@ A Card component could accept props like:
 />
 ```
 
-With PropTypes, defaultProps, and clean design, it becomes reusable across different modules.
-
 🧠 Interview Tips
-Question |Best Answer
-When would you use class components? |Rarely now, unless working in legacy code
-Can functional components handle state? |Yes, using Hooks
-What's the issue with prop drilling? |Makes the component tree harder to manage
-Why use PropTypes? |To catch bugs, ensure correct prop types
-What happens if a prop is missing?| Use defaultProps to provide fallback
+Question | Best Answer
+----------------------------------------|------------
+When would you use class components? | Rarely now, unless working in legacy code
+Can functional components handle state? | Yes, using Hooks
+What's the issue with prop drilling? | Makes the component tree harder to manage
+Why use PropTypes? | To catch bugs, ensure correct prop types
+What happens if a prop is missing? | Use defaultProps to provide fallback
+
+📁 Project Structure
+
+📦 CardApp
+├── 📄 AppFunctional.jsx
+├── 📄 AppClass.jsx
+├── 📄 CardComponent.jsx
+├── 📄 CardComponent.css
+└── 📄 README.md
