@@ -24,21 +24,27 @@ React is an open-source JavaScript library used to build user interfaces, partic
 
 ### 2. Virtual DOM vs Actual DOM
 
+In React, the DOM (Document Object Model) is a structured representation of the HTML elements in a web page or application. It organizes the UI as a tree-like structure, where each node represents an element or component.
+
 **Actual DOM:**
 
 * The real Document Object Model directly rendered and manipulated in the browser.
+* It is a actual representation of a webpage.
+* It re-renders the entire pages.
+* It Suitable for static websites.
 
 **Virtual DOM:**
 
-* A lightweight JavaScript object that is a copy of the real DOM.
+* A lightweight JavaScript object copy of the real DOM.
 * Used by React to track changes and update only the necessary parts of the UI efficiently.
+* Ideal and good for dynamic and complex Single page application.
 
 | Feature      | Virtual DOM                        | Actual DOM                           |
 | ------------ | ---------------------------------- | ------------------------------------ |
 | Type         | JavaScript Object                  | Browser API                          |
 | Speed        | Faster updates via diffing         | Slower as it updates whole tree      |
 | Efficiency   | Efficient with large-scale changes | Less efficient with frequent changes |
-| Usage        | Used in frameworks like React      | Native to browser                    |
+| Usage        | Used in libraries like React       | Used in frameworks like Angular      |
 | Manipulation | Handled via libraries like React   | Directly via JS/DOM APIs             |
 
 **Advantages of Virtual DOM:**
@@ -137,6 +143,25 @@ npx create-react-app hello-world
 cd hello-world
 npm start
 ```
+### OR
+### Create React App using Vite
+
+```bash
+npm create vite@latest
+
+Project name:
+│  30-days-reactjs-challenge
+│
+◇  Select a framework:
+│  React
+│
+◇  Select a variant:
+│  JavaScript
+
+cd 30-days-reactjs-challenge
+npm run dev
+
+```
 
 ### 3. Understand Folder Structure
 
@@ -155,30 +180,33 @@ npm start
 ```jsx
 function App() {
   return (
-    <div>
-      <h1>Hello, World!</h1>
-      <p>Welcome to your first React app.</p>
-    </div>
-  );
+    <>
+      <div>
+        <h1>Welcome to the 30 Days Reactjs Challenge</h1>
+      </div>
+    </>
+  )
 }
-
 export default App;
 ```
 
-**index.js:**
+**index.js/main.jsx:**
 
 ```jsx
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import App from './App.jsx'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
 ```
 
 ---
 
-## 🔍 index.js Code Explanation (for Interviews)
+## 🔍 index.js/main.jsx Code Explanation (for Interviews)
 
 ```js
 import React from 'react';
@@ -186,6 +214,21 @@ import React from 'react';
 
 * Imports the core React library.
 * Necessary to use JSX syntax and React features like components, hooks, etc.
+
+  
+```js
+<StrictMode>
+    <App />
+</StrictMode>,
+```
+
+* React.StrictMode is a wrapper component used during development.
+* It helps identify potential issues in the application:
+  * Detects unsafe lifecycle methods
+  * Warns about legacy API usage
+  * Helps highlight side effects
+
+Note: It doesn't affect the production build.
 
 ```js
 import ReactDOM from 'react-dom/client';
