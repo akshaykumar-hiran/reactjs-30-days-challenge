@@ -198,11 +198,4 @@ What's the issue with prop drilling? | Makes the component tree harder to manage
 Why use PropTypes? | To catch bugs, ensure correct prop types
 What happens if a prop is missing? | Use defaultProps to provide fallback
 
-📁 Project Structure
 
-📦 CardApp
-├── 📄 AppFunctional.jsx
-├── 📄 AppClass.jsx
-├── 📄 CardComponent.jsx
-├── 📄 CardComponent.css
-└── 📄 README.md
