@@ -199,3 +199,15 @@ Why use PropTypes? | To catch bugs, ensure correct prop types
 What happens if a prop is missing? | Use defaultProps to provide fallback
 
 
+📁 Project Structure
+
+| File Name             | Description                                                                 |
+|-----------------------|-----------------------------------------------------------------------------|
+| `AppFunctional.jsx`   | Demonstrates how to use the Card component with a **functional component** |
+| `AppClass.jsx`        | Demonstrates how to use the Card component with a **class component**       |
+| `CardComponent.jsx`   | The **reusable Card component** that accepts `title`, `content`, and `footer` via props |
+| `CardComponent.css`   | Provides **basic styling** for the Card layout                              |
+| `README.md`           | A complete guide covering **Functional vs Class components**, Props, PropTypes, defaultProps, and real-world use case |
+
+
+Happy Coding! 🎉
